@@ -25,6 +25,8 @@
 
         <!-- Css -->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+         <!--<link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+        <link href="assets/libs/choices.js/public/assets/styles/choices.min.css" rel="stylesheet"> -->
         <!-- Main Css -->
         <link href="assets/libs/%40iconscout/unicons/css/line.css" type="text/css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/icons.css">
@@ -49,15 +51,16 @@
                 <!-- Logo container-->
                 <a class="logo" href="index.html">
                     <div class="block sm:hidden">
-                        
-                        <p class="h-10 inline-block dark:hidden"> <img src="assets/images/rguktlogo.png" alt="" class="h-10 inline-block dark:hidden">  Exam Cell</p>
-                      
+                        <!-- <img src="assets/images/logo-icon-40.png" class="h-10 inline-block dark:hidden"  alt=""> -->
+                        <p class="h-10 inline-block dark:hidden"> <img src="assets/images/rguktlogo.png" alt="" class="h-10 inline-block dark:hidden"
+                            >  Exam Cell</p>
+                        <!-- <img src="assets/images/logo-icon-40-white.png" class="h-10 hidden dark:inline-block"  alt=""> -->
                         <p class="h-10 hidden dark:inline-block" > <img src="assets/images/rguktlogo.png" alt=""  class="h-10 inline-block dark:hidden"> Exam Cell</p>
                     </div>
                     <div class="sm:block hidden">
-                      
+                        <!-- <img src="assets/images/logo-dark.png" class="h-[24px] inline-block dark:hidden" alt=""> -->
                         <p class="h-[24px] inline-block dark:hidden"> <img src="assets/images/rguktlogo.png" alt="" class="h-10 inline-block dark:hidden"> Exam Cell</p>
-                      
+                        <!-- <img src="assets/images/logo-white.png" class="h-[24px] hidden dark:inline-block" alt=""> -->
                         <p class="h-[24px] hidden dark:inline-block"> <img src="assets/images/rguktlogo.png" alt=""  class="h-10 inline-block dark:hidden">Exam Cell</p>
                     </div>
                 </a>
@@ -83,7 +86,11 @@
                         
                         <a href="#" class="btn btn-icon rounded-full bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white"><img src="assets/images/team/05.jpg" class="rounded-full" alt=""></a>
                     </li>
-                    
+                    <!-- <li class="inline-block pl-1 mb-0">
+                        <div class="btn bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white searchbtn submit-btn rounded-md">
+                            <input type="submit" value="Logout">
+                        </div>
+                     </li> -->
                 </ul>
                 <!--Login button End-->
 
@@ -91,12 +98,13 @@
                     <!-- Navigation Menu-->   
                     <ul class="navigation-menu">
                         <li class="has-submenu parent-menu-item">
-                            <a href="index.html" style="font-weight: 500;">Home</a>
+                            <a href="javascript:void(0)" style="font-weight: 500;">Home</a>
                         </li>
 
                         <li class="has-submenu parent-parent-menu-item"><a href="javascript:void(0)" style="font-weight: 500;"> Results </a><span class="menu-arrow"></span>
                             <ul class="submenu">
-                            
+                                <!-- <li><a href="job-categories.html" class="sub-menu-item">Job Categories</a></li> -->
+                        
                                 <li class="has-submenu parent-menu-item">
                                     <a href="javascript:void(0)"> AY19-20 </a><span class="submenu-arrow"></span>
                                     <ul class="submenu">
@@ -244,7 +252,7 @@
                                         <li><a href="#" class="sub-menu-item">Remedial Registration - (Only for R17 Batch)</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="comingsoon.html" class="sub-menu-item">Payments</a></li>
+                                <li><a href="services.html" class="sub-menu-item">Payments</a></li>
                                 
                             </ul>
                         </li>
@@ -258,210 +266,36 @@
         <!-- End Navbar -->
 
        <!-- Start -->
-       <section class="relative py-36 table w-full bg-gradient-to-b from-emerald-600/20 dark:from-emerald-600/40 via-emerald-600/10 dark:via-emerald-600/20 to-transparent">
-        <div class="container">
-            <div class="grid md:grid-cols-2 grid-cols-1 items-center mt-10 gap-[30px]">
-                <div class="md:order-1 order-2">
-                    <div class="bg-white dark:bg-slate-900 rounded-3xl shadow dark:shadow-gray-800 md:p-8 p-6 ltr:lg:mr-10 rtl:lg:ml-10 relative">
-                        <h4 class="mb-3 text-3xl font-semibold">Welcome back</h4>
-                        
-                        <form class="mt-6">
-                            <div class="grid grid-cols-1">
-                                <div class="mb-4">
-                                    <div class="mb-4 ltr:text-left rtl:text-right">
-                                        <label class="font-semibold" for="LoginEmail">Student Id:</label>
-                                    <input id="LoginEmail" type="text" class="form-input mt-3 rounded-lg" placeholder="R000000">
-                                </div>
-                                </div>
 
-                                <div class="mb-4 ltr:text-left rtl:text-right">
-                                    <label class="font-semibold" for="LoginPassword">Password:</label>
-                                <input id="LoginPassword" type="password" class="form-input mt-3 rounded-lg" placeholder="Password">
+        <section class="md:h-screen py-36 flex items-center justify-center relative overflow-hidden bg-[url('../../assets/images/hero/bg3.html')] bg-no-repeat bg-center bg-cover">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+            <div class="container-fluid relative z-3">
+                <div class="grid grid-cols-1">
+                    <div class="flex flex-col min-h-screen justify-center md:px-10 py-10 px-4">
+                        <div class="text-center">
+                            <a href="index.html"><img src="assets/images/logo-icon-40.png" class="mx-auto h-10" alt=""></a>
+                        </div>
+                        <div class="title-heading text-center my-auto">
+                            <h1 class="text-white mt-3 mb-6 md:text-5xl text-3xl font-bold">We Are Coming Soon...</h1>
+                            <p class="text-white/70 text-lg max-w-xl mx-auto">Find Jobs, Employment & Career Opportunities. Some of the companies we've helped recruit excellent applicants over the years.</p>
+                        
+                            <div id="countdown">
+                                <ul class="count-down list-none inline-block text-white text-center mt-8 m-6">
+                                    <li id="days" class="count-number inline-block m-2"></li>
+                                    <li id="hours" class="count-number inline-block m-2"></li>
+                                    <li id="mins" class="count-number inline-block m-2"></li>
+                                    <li id="secs" class="count-number inline-block m-2"></li>
+                                    <li id="end" class="h1"></li>
+                                </ul>
                             </div>
-                            <div class="flex justify-between mb-4">
-                                <div class="inline-flex items-center">
-                                    <input class="form-checkbox text-emerald-600 rounded w-4 h-4 ltr:mr-2 rtl:ml-2 border border-inherit" type="checkbox" value="" id="Rememberme">
-                                    <label class="form-check-label text-slate-400" for="Rememberme">Remember me</label>
-                                </div>
-                                <p class="text-slate-400 mb-0"><a href="reset-password.html" class="text-slate-400">Forgot password ?</a></p>
-                            </div>
-                            <div class="mb-4">
-                                <input type="submit" class="btn bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white rounded-lg w-full" value="Login">
-                            </div>
-                                
-                            </div><!--end grid-->
-                        </form>
-                        <!-- end form -->
-                    </div>
-                </div>
-
-                <div class="md:order-2 order-1">
-                    <img src="assets/images/svg/woman_working_2.svg" alt="">
-                </div>
-            </div><!--end grid-->
-        </div><!--end container-->
-
-            <div class="container md:mt-24 mt-16">
-                <div class="grid md:grid-cols-12 grid-cols-1 pb-8 items-end">
-                    <div class="lg:col-span-8 md:col-span-6 ltr:md:text-left rtl:md:text-right text-center">
-                        <h3 class="mb-4 md:text-[26px] md:leading-normal text-2xl leading-normal font-semibold">Notice Board</h3>
-                        <p class="text-slate-400 max-w-xl">" IIIT RK-VALLEY RGUKT AP " Present updates. </p>
-                    </div>
-                </div><!--end grid-->
-
-                <div class="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
-                    <div class="group p-4 rounded-md shadow dark:shadow-gray-700 bg-slate-50 dark:bg-slate-800 hover:bg-emerald-600 dark:hover:bg-emerald-600 transition-all duration-500">
-                        <span class="block text-slate-400 group-hover:text-white/50 text-sm mt-1">15, Mar 2023</span>
-                        <h5 class="text-lg font-semibold group-hover:text-white">AY21-22 P1S2 (R21) EST Results Available.</h5>
-                        
-
-                        <div class="mt-2">
-                            <a href="#" class="text-emerald-600 dark:text-white/80 group-hover:text-white font-medium">Explore <i class="uil uil-arrow-right"></i></a>
                         </div>
-                    </div><!--end content-->
-                    
-                    <div class="group p-4 rounded-md shadow dark:shadow-gray-700 bg-slate-50 dark:bg-slate-800 hover:bg-emerald-600 dark:hover:bg-emerald-600 transition-all duration-500">
-                        <span class="block text-slate-400 group-hover:text-white/50 text-sm mt-1">15, Mar 2023</span>
-                        <h5 class="text-lg font-semibold group-hover:text-white">AY21-22 E3S2 (R17) EST Results Available.</h5>
-                        
-
-                        <div class="mt-2">
-                            <a href="#" class="text-emerald-600 dark:text-white/80 group-hover:text-white font-medium">Explore <i class="uil uil-arrow-right"></i></a>
-                        </div>
-                    </div><!--end content-->
-                    
-                    <div class="group p-4 rounded-md shadow dark:shadow-gray-700 bg-slate-50 dark:bg-slate-800 hover:bg-emerald-600 dark:hover:bg-emerald-600 transition-all duration-500">
-                        <span class="block text-slate-400 group-hover:text-white/50 text-sm mt-1">15, Mar 2023</span>
-                        <h5 class="text-lg font-semibold group-hover:text-white">AY21-22 E2S2 (R18) EST Results Available.</h5>
-                        
-
-                        <div class="mt-2">
-                            <a href="#" class="text-emerald-600 dark:text-white/80 group-hover:text-white font-medium">Explore <i class="uil uil-arrow-right"></i></a>
-                        </div>
-                    </div><!--end content-->
-                    
-                    <div class="group p-4 rounded-md shadow dark:shadow-gray-700 bg-slate-50 dark:bg-slate-800 hover:bg-emerald-600 dark:hover:bg-emerald-600 transition-all duration-500">
-                        <span class="block text-slate-400 group-hover:text-white/50 text-sm mt-1">15, Mar 2023</span>
-                        <h5 class="text-lg font-semibold group-hover:text-white">AY21-22 P1-S2 (R21) EST Results Available.</h5>
-                        
-
-                        <div class="mt-2">
-                            <a href="#" class="text-emerald-600 dark:text-white/80 group-hover:text-white font-medium">Explore <i class="uil uil-arrow-right"></i></a>
-                        </div>
-                    </div><!--end content-->
-                    
-                    
-                    <div class="group p-4 rounded-md shadow dark:shadow-gray-700 bg-slate-50 dark:bg-slate-800 hover:bg-emerald-600 dark:hover:bg-emerald-600 transition-all duration-500">
-                        <span class="block text-slate-400 group-hover:text-white/50 text-sm mt-1">15, Mar 2023</span>
-                        <h5 class="text-lg font-semibold group-hover:text-white">AY21-22 P1-S2 (R21) EST Results Available.</h5>
-                        
-
-                        <div class="mt-2">
-                            <a href="#" class="text-emerald-600 dark:text-white/80 group-hover:text-white font-medium">Explore <i class="uil uil-arrow-right"></i></a>
-                        </div>
-                    </div><!--end content-->
-                </div><!--end grid-->
-            </div><!--end container-->
-
-
-
-                <div class="grid md:grid-cols-12 grid-cols-1 mt-6">
-                    <div class="md:col-span-12 text-center">
-                        <a href="#" class="btn btn-link text-slate-400 hover:text-emerald-600 after:bg-emerald-600 duration-500 ease-in-out">See More Updates <i class="uil uil-arrow-right align-middle"></i></a>
+                        <!-- <div class="text-center">
+                            <p class="mb-0 text-slate-400 font-medium">© <script>document.write(new Date().getFullYear())</script> Jobstack. Design with <i class="mdi mdi-heart text-red-600"></i> by <a href="../../../external.html?link=https://shreethemes.in/" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                        </div> -->
                     </div>
                 </div><!--end grid-->
             </div><!--end container-->
-
-            <div class="container md:mt-24 mt-16">
-                <div class="grid grid-cols-1 pb-8 text-center">
-                    <h3 class="mb-4 md:text-[26px] md:leading-normal text-2xl leading-normal font-semibold">Latest Blog or News</h3>
-
-                    <p class="text-slate-400 max-w-xl mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur eos exercitationem in aliquam. Error reiciendis, iure placeat incidunt accusamus dolorum reprehenderit commodi molestias distinctio. Nisi quod vitae quidem incidunt!</p>
-                </div><!--end grid-->
-
-                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
-                    <div class="group relative overflow-hidden bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-gray-700">
-                        <div class="relative overflow-hidden">
-                            <img src="assets/images/blog/01.jpg" class="scale-110 group-hover:scale-100 transition-all duration-500" alt="">
-                        </div>
-
-                        <div class="relative p-6">
-                            <div class="absolute left-6 -top-4">
-                                <span class="bg-emerald-600 text-white text-[12px] px-2.5 py-1 font-semibold rounded-full h-5">Arts</span>
-                            </div>
-
-                            <div class="">
-                                <div class="flex mb-4">
-                                    <span class="text-slate-400 text-sm"><i class="uil uil-calendar-alt text-slate-900 dark:text-white mr-2"></i>20th February, 2023</span>
-                                    <span class="text-slate-400 text-sm ml-3"><i class="uil uil-clock text-slate-900 dark:text-white mr-2"></i>5 min read</span>
-                                </div>
-
-                                <a href="blog-detail.html" class="title text-lg font-semibold hover:text-emerald-600 duration-500 ease-in-out">1sdgiujoigsdffg jasfyguiasdf</a>
-                                
-                                <div class="flex justify-between items-center mt-3">
-                                    <a href="blog-detail.html" class="btn btn-link hover:text-emerald-600 after:bg-emerald-600 duration-500 ease-in-out">Read More <i class="uil uil-arrow-right"></i></a>
-                                    <span class="text-slate-400 text-sm">by <a href="#" class="text-slate-900 dark:text-white hover:text-emerald-600 dark:hover:text-emerald-600 font-medium">Rk valley</a></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end content-->
-                    
-                    <div class="group relative overflow-hidden bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-gray-700">
-                        <div class="relative overflow-hidden">
-                            <img src="assets/images/blog/02.jpg" class="scale-110 group-hover:scale-100 transition-all duration-500" alt="">
-                        </div>
-
-                        <div class="relative p-6">
-                            <div class="absolute left-6 -top-4">
-                                <span class="bg-emerald-600 text-white text-[12px] px-2.5 py-1 font-semibold rounded-full h-5">Illustration</span>
-                            </div>
-
-                            <div class="">
-                                <div class="flex mb-4">
-                                    <span class="text-slate-400 text-sm"><i class="uil uil-calendar-alt text-slate-900 dark:text-white mr-2"></i>20th February, 2023</span>
-                                    <span class="text-slate-400 text-sm ml-3"><i class="uil uil-clock text-slate-900 dark:text-white mr-2"></i>5 min read</span>
-                                </div>
-
-                                <a href="blog-detail.html" class="title text-lg font-semibold hover:text-emerald-600 duration-500 ease-in-out">Dkwdjfhkjewtuiwkqjejtuyuit</a>
-                                
-                                <div class="flex justify-between items-center mt-3">
-                                    <a href="blog-detail.html" class="btn btn-link hover:text-emerald-600 after:bg-emerald-600 duration-500 ease-in-out">Read More <i class="uil uil-arrow-right"></i></a>
-                                    <span class="text-slate-400 text-sm">by <a href="#" class="text-slate-900 dark:text-white hover:text-emerald-600 dark:hover:text-emerald-600 font-medium">Rk valley</a></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end content-->
-                    
-                    <div class="group relative overflow-hidden bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-gray-700">
-                        <div class="relative overflow-hidden">
-                            <img src="assets/images/blog/03.jpg" class="scale-110 group-hover:scale-100 transition-all duration-500" alt="">
-                        </div>
-
-                        <div class="relative p-6">
-                            <div class="absolute left-6 -top-4">
-                                <span class="bg-emerald-600 text-white text-[12px] px-2.5 py-1 font-semibold rounded-full h-5">Music</span>
-                            </div>
-
-                            <div class="">
-                                <div class="flex mb-4">
-                                    <span class="text-slate-400 text-sm"><i class="uil uil-calendar-alt text-slate-900 dark:text-white mr-2"></i>20th February, 2023</span>
-                                    <span class="text-slate-400 text-sm ml-3"><i class="uil uil-clock text-slate-900 dark:text-white mr-2"></i>5 min read</span>
-                                </div>
-
-                                <a href="blog-detail.html" class="title text-lg font-semibold hover:text-emerald-600 duration-500 ease-in-out">sdlkfghsdfoklsg</a>
-                                
-                                <div class="flex justify-between items-center mt-3">
-                                    <a href="blog-detail.html" class="btn btn-link hover:text-emerald-600 after:bg-emerald-600 duration-500 ease-in-out">Read More <i class="uil uil-arrow-right"></i></a>
-                                    <span class="text-slate-400 text-sm">by <a href="#" class="text-slate-900 dark:text-white hover:text-emerald-600 dark:hover:text-emerald-600 font-medium">Rk valley</a></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end content-->
-                </div><!--end grid-->
-            </div><!--end container-->
+        </section><!--end section -->
         </section><!--end section-->
         <!-- End -->
 
@@ -475,8 +309,7 @@
                             <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
                                 <div class="md:col-span-3">
                                     <a href="#" class="flex justify-center md:justify-start focus:outline-none">
-                                        <p class="text-white h-10 inline-block text-xl">IIIT RGUKT RK-VALLEY AP</p>
-                                        <!-- <img src="assets/images/rguktlogo.png" class="h-10" alt=""> -->
+                                        <img src="assets/images/rguktlogo.png" class="h-10 inline-block" alt="">
                                     </a>
                                 </div><!--end col-->
         
@@ -484,7 +317,9 @@
                                 <div class="md:col-span-9">
                                     <ul class="list-disc footer-list ltr:md:text-right rtl:md:text-left text-center">
                                         <li class="inline-block"><a href="index.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out font-medium ltr:mr-4 rtl:ml-4">Home</a></li>
-                                        <li class="inline-block mt-[10px] md:mt-0"><a href="about.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out font-medium ltr:mr-4 rtl:ml-4">About us</a></li>
+                                        <!-- <li class="inline-block mt-[10px] md:mt-0"><a href="services.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out font-medium ltr:mr-4 rtl:ml-4">How it works</a></li>
+                                        <li class="inline-block mt-[10px] md:mt-0"><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out font-medium ltr:mr-4 rtl:ml-4">Create a job</a></li> -->
+                                        <li class="inline-block mt-[10px] md:mt-0"><a href="aboutus.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out font-medium ltr:mr-4 rtl:ml-4">About us</a></li>
                                         <li class="inline-block mt-[10px] md:mt-0"><a href="contact.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out font-medium">Contact us</a></li>
                                     </ul><!--end icon-->
                                 </div><!--end col-->
@@ -529,6 +364,24 @@
             </span>
         </div>
 
+        <!-- <div class="fixed top-1/2 -right-11 z-50 hidden sm:block">
+            <a href="../../../external.html?link=https://1.envato.market/jobstack" target="_blank" class="py-1 px-3 relative inline-block rounded-b-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-700 font-semibold"><i class="mdi mdi-cart-outline mr-1"></i> Download</a>
+        </div> -->
+        <!-- Switcher -->
+
+        <!-- LTR & RTL Mode Code -->
+        <!-- <div class="fixed top-[40%] -left-3 z-50">
+            <a href="#" id="switchRtl">
+                <span class="relative inline-block rotate-90">
+                    <input type="checkbox" class="checkbox opacity-0 absolute" id="chk">
+                    <label class="label bg-slate-900 dark:bg-white shadow dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-14 h-8" for="chk">
+                        <i class="uil uil-moon text-[20px] text-yellow-500"></i>
+                        <i class="uil uil-sun text-[20px] text-yellow-500"></i>
+                        <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] w-7 h-7"></span>
+                    </label>
+                </span>
+            </a>
+        </div> -->
         <!-- LTR & RTL Mode Code --> 
 
         <!-- Back to top -->
@@ -539,7 +392,7 @@
         <script src="assets/libs/tobii/js/tobii.min.js"></script>
         <script src="assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
         <script src="assets/libs/feather-icons/feather.min.js"></script>
-        <!-- <script src="assets/js/plugins.init.js"></script> -->
+        <script src="assets/js/plugins.init.js"></script>
         <script src="assets/js/app.js"></script>
         <!-- JAVASCRIPTS -->
     </body>
