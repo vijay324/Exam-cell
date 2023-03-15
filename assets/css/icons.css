@@ -1,11 +1,9 @@
 @charset "UTF-8";
-/* Template Name: Jobstack - Job Portal Tailwind CSS Template
-   Author: Shreethemes
-   Email: support@shreethemes.in
-   Website: https://shreethemes.in
+/* Author: S.vijay kumar
+   Email: codervijay1@gmail.com
+   Website: Examcell
    Version: 1.0.0
    Created: March 2023
-   File Description: Main Icon file of the template
 */
 /* Plugins */
 /* MaterialDesignIcons.com */
@@ -26662,4 +26660,8 @@
     transform: rotate(359deg);
   }
 }
-/*# sourceMappingURL=materialdesignicons.css.map */
+
+/* *{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+} */
