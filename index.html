@@ -3,14 +3,14 @@
 <!-- 
         Author: S.vijay kumar
         Email: codervijay1@gmail.com
-        Website: Examcell
+        Website: www.vijay-one.vercel.app
         Version: 1.0.0
         Created: March 2023
      -->
 
 <head>
     <meta charset="UTF-8">
-    <title>IIIT Rk valley || RGUKT</title>
+    <title>Exam Cell || IIIT Rk Valley</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta content="IIIT Rk valley student portal." name="description">
     <meta content="git push -u origin main, tailwind Css" name="keywords">
@@ -27,69 +27,11 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- Main Css -->
     <link href="assets/libs/%40iconscout/unicons/css/line.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/icons.css">
     <link rel="stylesheet" href="assets/css/tailwind.min.css">
-    <style>
-        .title {
-            font-family: sans-serif;
-            color: #000000;
-            text-align: center;
-            border-radius: 15px;
-        }
-
-        .tabContainer {
-            width: 100%;
-            height: 350px;
-            border-radius: 15px;
-
-        }
-
-        .tabContainer .buttonContainer {
-            height: 15%;
-        }
-
-        .tabContainer .buttonContainer button {
-            width: 25%;
-            height: 100%;
-            float: left;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 10px;
-            font-family: sans-serif;
-            font-size: 18px;
-            background-color: #dddddd;
-            border-radius: 15px 15px 0px 0px;
-            font-weight: 600;
-        }
-
-        .tabContainer .buttonContainer button:hover {
-            background-color: #b3b3b3;
-        }
-
-        .tabContainer .tabPanel {
-            height: 400px;
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);
-            text-align: center;
-            /* padding-top: 105px; */
-
-            padding: 15px;
-            box-sizing: border-box;
-            font-family: sans-serif;
-            font-size: 22px;
-            display: none;
-            border-radius: 0px 0px 15px 15px;
-            overflow: scroll;
-            /* overflow: hidden; */
-            overflow: auto;
-        }
-
-        button::onclick {
-            color: #000000;
-
-        }
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
 </head>
 
 <body class="dark:bg-slate-900">
@@ -145,17 +87,17 @@
             <ul class="buy-button list-none mb-0">
                 <li class="inline-block pl-1 mb-0">
                     <div class="md:mt-0 mt-4">
-                        <!-- <a href="#" class="btn btn-icon rounded-full bg-emerald-600/5 hover:bg-emerald-600 border-emerald-600/10 hover:border-emerald-600 text-emerald-600 hover:text-white md:relative absolute top-0 right-0 md:m-0 m-3"><i data-feather="bookmark" class="h-4 w-4"></i></a> -->
-                        <a href="#" class="btn rounded-md bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white ltr:md:ml-2 rtl:md:mr-2 w-full md:w-auto">Login Now</a>
+                         <button id="login-show" type="button" class="btn rounded-md bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white ltr:md:ml-2 rtl:md:mr-2 w-full md:w-auto" data-toggle="modal" data-target="#myModal">
+                            Login Now
+                          </button>
                     </div>
-                    <!-- <a href="#"
-                        class="btn btn-icon rounded-full bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white"><img
-                            src="assets/images/team/05.jpg" class="rounded-full" alt=""></a> -->
+                    
                 </li>
 
             </ul>
             <!--Login button End-->
-
+            
+            <!--Start navigation-->
             <div id="navigation">
                 <!-- Navigation Menu-->
                 <ul class="navigation-menu">
@@ -328,7 +270,7 @@
 
                         </ul>
                     </li> -->
-                    <li><a href="contact.html" class="sub-menu-item" style="font-weight: 500;">About Us</a></li>
+                    <li><a href="about.html" class="sub-menu-item" style="font-weight: 500;">About Us</a></li>
                     <li><a href="contact.html" class="sub-menu-item" style="font-weight: 500;">Contact</a></li>
                     <!-- <li><a href="#" class="sub-menu-item" style="color: rgb(255, 0, 0); font-weight: 500;"><i
                                 class="ri-logout-box-r-line" class="sub-menu-item"></i>&nbsp;Logout</a></li> -->
@@ -342,9 +284,49 @@
     <!--end header-->
     <!-- End Navbar -->
 
+    <!-- login -->
+    <div id="login-modal">
+            <div class="bg-white dark:bg-slate-900 rounded-3xl shadow dark:shadow-gray-800 md:p-8 p-6 ltr:lg:mr-10 rtl:lg:ml-10 relative">
+                <h4 class="mb-3 text-2xl font-semibold">Welcome back</h4>
+                <div class="top-form">
+                    <div class="close-modal">
+                    &#10006
+                    </div>
+                </div>
+                <form class="mt-6">
+                    <div class="grid grid-cols-1">
+                        <div class="mb-4">
+                            <div class="mb-4 ltr:text-left rtl:text-right">
+                                <label class="font-semibold" for="LoginEmail">Student Id:</label>
+                               <input id="LoginEmail" type="text" class="form-input mt-3 rounded-lg" placeholder="R000000">
+                        </div>
+                        </div>
+
+                        <div class="mb-4 ltr:text-left rtl:text-right">
+                            <label class="font-semibold" for="LoginPassword">Password:</label>
+                        <input id="LoginPassword" type="password" class="form-input mt-3 rounded-lg" placeholder="Password">
+                    </div>
+                    <div class="flex justify-between mb-4">
+                        <div class="inline-flex items-center">
+                            <input class="form-checkbox text-emerald-600 rounded w-4 h-4 ltr:mr-2 rtl:ml-2 border border-inherit" type="checkbox" value="" id="Rememberme">
+                            <label class="form-check-label text-slate-400" for="Rememberme">Remember me</label>
+                        </div>
+                        <p class="text-slate-400 mb-0"><a href="reset-password.html" class="text-slate-400">Forgot password ?</a></p>
+                    </div>
+                    <div class="mb-4">
+                        <input type="submit" class="btn bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white rounded-lg w-full" value="Login">
+                    </div>
+                        
+                    </div><!--end grid-->
+                </form>
+                <!-- end form -->
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- login end -->
     <!-- Start -->
-    <section
-        class="relative py-36 table w-full bg-gradient-to-b from-emerald-600/20 dark:from-emerald-600/40 via-emerald-600/10 dark:via-emerald-600/20 to-transparent">
+    <section class="relative py-36 table w-full bg-gradient-to-b from-emerald-600/20 dark:from-emerald-600/40 via-emerald-600/10 dark:via-emerald-600/20 to-transparent">
         <div class="container">
             <div class="lg:col-span-8 md:col-span-6 ltr:md:text-left rtl:md:text-right text-center">
                 <h3 class="mb-4 md:text-[26px] md:leading-normal text-2xl leading-normal font-semibold">Notice Board
@@ -359,10 +341,6 @@
                     <button onclick="showPanel(3,'#fff')">Tab 4</button> -->
                 </div>
                 <div class="tabPanel">
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi excepturi ducimus sequi
-                        dignissimos expedita tempore nihil commodi est maiores
-                        dolormpore
-                        doloremque quam modi, atque minima enim saepe! Dolorem rerum minima incidunt, officia!</p> -->
                         <div class="group relative overflow-hidden md:flex justify-between items-center rounded shadow hover:shadow-md dark:shadow-gray-700 transition-all duration-500 p-5">
                             <div class="flex items-center">
                                 <!-- <div class="w-14 h-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
@@ -372,14 +350,9 @@
                             </div>
     
                             <div class="md:block flex justify-between md:mt-0 mt-4">
-                                <span class="block"><span class="bg-emerald-600/10 inline-block text-emerald-600 text-xs px-2.5 py-0.5 font-semibold rounded-full">New Update</span></span>
+                                <span class="block"><span class="bg-emerald-600/10 inline-block text-emerald-600 text-xs px-2.5 py-0.5 font-semibold rounded-full">Latest</span></span>
                                 <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> 26th Mar 2023</span>
                             </div>
-    
-                            <!-- <div class="md:block flex justify-between md:mt-0 mt-2">
-                                <span class="text-slate-400"><i class="uil uil-map-marker"></i> China</span>
-                                <span class="block font-semibold md:mt-1 mt-0">$4,000 - $4,500</span>
-                            </div> -->
     
                             <div class="md:mt-0 mt-4">
                                 <!-- <a href="#" class="btn btn-icon rounded-full bg-emerald-600/5 hover:bg-emerald-600 border-emerald-600/10 hover:border-emerald-600 text-emerald-600 hover:text-white md:relative absolute top-0 right-0 md:m-0 m-3"><i data-feather="bookmark" class="h-4 w-4"></i></a> -->
@@ -395,7 +368,7 @@
                             </div>
     
                             <div class="md:block flex justify-between md:mt-0 mt-4">
-                                <span class="block"><span class="bg-emerald-600/10 inline-block text-emerald-600 text-xs px-2.5 py-0.5 font-semibold rounded-full">New Update</span></span>
+                                
                                 <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> 26th Mar 2023</span>
                             </div>
     
@@ -422,7 +395,7 @@
                             </div>
     
                             <div class="md:block flex justify-between md:mt-0 mt-4">
-                                <span class="block"><span class="bg-emerald-600/10 inline-block text-emerald-600 text-xs px-2.5 py-0.5 font-semibold rounded-full">New Update</span></span>
+                                
                                 <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> 26th Mar 2023</span>
                             </div>
     
@@ -445,7 +418,7 @@
                             </div>
     
                             <div class="md:block flex justify-between md:mt-0 mt-4">
-                                <span class="block"><span class="bg-emerald-600/10 inline-block text-emerald-600 text-xs px-2.5 py-0.5 font-semibold rounded-full">New Update</span></span>
+                                
                                 <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> 26th Mar 2023</span>
                             </div>
     
@@ -468,7 +441,7 @@
                             </div>
     
                             <div class="md:block flex justify-between md:mt-0 mt-4">
-                                <span class="block"><span class="bg-emerald-600/10 inline-block text-emerald-600 text-xs px-2.5 py-0.5 font-semibold rounded-full">New Update</span></span>
+                                
                                 <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> 26th Mar 2023</span>
                             </div>
     
@@ -491,7 +464,7 @@
                             </div>
     
                             <div class="md:block flex justify-between md:mt-0 mt-4">
-                                <span class="block"><span class="bg-emerald-600/10 inline-block text-emerald-600 text-xs px-2.5 py-0.5 font-semibold rounded-full">New Update</span></span>
+                                
                                 <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> 26th Mar 2023</span>
                             </div>
     
@@ -546,9 +519,6 @@
                 <div class="tabPanel">Tab 4:Content</div>
             </div>
         </div>
-        <!--end container-->
-
-
     </section>
     <!--end section-->
     <!-- End -->
@@ -623,6 +593,7 @@
     </footer>
     <!--end footer-->
     <!-- End Footer -->
+
     <!-- Switcher -->
     <div class="fixed top-1/4 -left-2 z-50 hidden sm:block" style="display: fixed;">
         <span class="relative inline-block rotate-90">
@@ -645,7 +616,7 @@
             class="uil uil-arrow-up"></i></a>
     <!-- Back to top -->
 
-    <!-- JAVASCRIPTS -->
+    <!-- Notice board javascript -->
     <script>
         var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
         var tabPanels = document.querySelectorAll(".tabContainer  .tabPanel");
@@ -663,14 +634,28 @@
             tabPanels[panelIndex].style.display = "block";
             tabPanels[panelIndex].style.backgroundColor = colorCode;
         }
-        showPanel(0, '#fff');
+        showPanel(0);
     </script>
+
+    <!-- javaScript Files -->
     <script src="assets/libs/tobii/js/tobii.min.js"></script>
     <script src="assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
     <script src="assets/libs/feather-icons/feather.min.js"></script>
     <!-- <script src="assets/js/plugins.init.js"></script> -->
     <script src="assets/js/app.js"></script>
-    <!-- JAVASCRIPTS -->
+
+    <!-- Login Javascript -->
+    <script type="text/javascript">
+        $(function(){
+            $('#login-show').click(function(){
+                $('#login-modal').fadeIn().css("display","flex");
+            });
+    
+            $('.close-modal').click(function(){
+                $('#login-modal').fadeOut();
+            });
+        });
+    </script>
 </body>
 
 </html>
