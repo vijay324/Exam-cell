@@ -435,7 +435,7 @@ button {
 }
 @media screen and (min-width: 400px) {
   .tabContainer {
-    width: 27rem;
+    width: 28rem;
     height: 350px;
     border-radius: 15px;
 
