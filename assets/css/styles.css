@@ -413,6 +413,14 @@ button {
 }
 
 /* For medium devices */
+@media screen and (min-width: 351px) {
+  .tabContainer {
+    width: 25rem;
+    height: 350px;
+    border-radius: 15px;
+
+}
+}
 @media screen and (min-width: 576px) {
   /* .nav__menu{
     width: 342px;
