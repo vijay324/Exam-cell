@@ -348,31 +348,24 @@ button {
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 350px) {
-  .container{
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
+  .tabContainer {
+    width: 21rem;
+    height: 350px;
+    border-radius: 15px;
 
-  .section{
-    padding: 3.5rem 0 1rem;
-  }
+}
 
-  .home{
-    padding-bottom: 0;
-  }
-
-  .contact__card{
-    grid-template-columns: repeat(1, 180px);
-    justify-content: center;
-  }
+.section__title{
+  font-size: 1.5rem;
+}
 }
 
 @media screen and (max-width: 320px) {
-  .nav__menu{
+  /* .nav__menu{
     padding: 1.3rem 1.5rem;
-  }
+  } */
 
-  .home__value{
+  /* .home__value{
     column-gap: 1rem;
   }
   .home__img{
@@ -389,8 +382,16 @@ button {
   .popular__card{
     width: 230px;
     padding: .5rem .5rem .75rem;
+  } */
+  .section__title{
+    font-size: 1.5rem;
   }
+  .tabContainer {
+    width: 19rem;
+    height: 350px;
+    border-radius: 15px;
 
+}
   .value__img,
   .contact__img{
     width: 220px;
@@ -402,24 +403,24 @@ button {
     height: 280px;
   }
 
-  .subscribe__container{
+  /* .subscribe__container{
     padding: 2rem 1rem;
-  }
+  } */
 
-  .footer__content{
+  /* .footer__content{
     gap: 2.5rem;
-  }
+  } */
 }
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
-  .nav__menu{
+  /* .nav__menu{
     width: 342px;
   }
 
   .home__search{
     width: 412px;
-  }
+  } 
 
   .contact__card{
     grid-template-columns: repeat(2, 192px);
@@ -428,11 +429,20 @@ button {
 
   .footer__content{
     grid-template-columns: repeat(3, max-content);
+  } */
+  .section__title{
+    font-size: 2rem;
   }
+  .tabContainer {
+    width: 19rem;
+    height: 350px;
+    border-radius: 15px;
+
+}
 }
 
 @media screen and (min-width: 767px) {
-  .home__container{
+  /* .home__container{
     grid-template-columns: repeat(2, 1fr);
     padding-top: 2rem;
   }
@@ -447,15 +457,21 @@ button {
   .logos__container{
     grid-template-columns: repeat(4, max-content);
     justify-content: center;
-  }
+  } */
 
-  .value__container,
-  .contact__container{
+  .value__container{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
 
-  .contact__images{
+  .tabContainer {
+    width: 19rem;
+    height: 350px;
+    border-radius: 15px;
+
+}
+
+  /* .contact__images{
     order: 1;
   }
 
@@ -470,21 +486,27 @@ button {
   .footer__container{
     grid-template-columns: repeat(2, max-content);
     justify-content: space-between;
-  }
+  } */
 }
 
 /* For large devices */
 @media screen and (min-width: 1023px){
-  .section{
+  /* .section{
     padding: 7.5rem 0 1rem;
-  }
+  }*/
   .section__title{
     font-size: 2.5rem;
   }
   .section__subtitle{
     font-size: var(--normal-font-size);
   }
+  .tabContainer {
+    width: 29rem;
+    height: 350px;
+    border-radius: 15px;
 
+}
+/*
   .nav{
     height: calc(var(--header-height) + 1.5rem);
   }
@@ -578,31 +600,26 @@ button {
   }
   .popular__data{
     padding: 0 .25rem 0 .75rem;
-  }
-  .value__container,
-  .contact__container{
+  } */
+  .value__container{
     align-items: flex-start;
     column-gap: 5rem;
   }
-  .value__orbe,
-  .contact__orbe{
+  .value__orbe{
     width: 501px;
     height: 641px;
     border-radius: 258px 258px 16px 16px;
   }
-  .value__img,
-  .contact__img{
+  .value__img{
     width: 461px;
     height: 601px;
     border-radius: 238px 238px 12px 12px;
   }
-  .value__img img,
-  .contact__img img{
+  .value__img img{
     max-width: initial;
     width: 490px;
   }
-  .value__description,
-  .contact__description{
+  .value__description{
     font-size: var(--normal-font-size);
     margin-bottom: 2.5rem;
   }
@@ -618,7 +635,7 @@ button {
     padding-bottom: 1rem;
     font-size: var(--small-font-size);
   }
-
+/* 
   .contact__card{
     grid-template-columns: repeat(2, 200px);
   }
@@ -661,16 +678,16 @@ button {
   .show-scroll{
     bottom: 3rem;
     right: 3rem;
-  }
+  } */
 }
 @media screen and (min-width: 1040px){
-  .container{
+  /* .container{
     margin-left: auto;
     margin-right: auto;
   }
   .home__container{
     column-gap: 4rem;
-  }
+  } */
 }
 /* For 2K & 4K resolutions */
 @media screen and (min-width: 2048px) {
