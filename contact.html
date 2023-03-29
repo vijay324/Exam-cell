@@ -88,10 +88,12 @@
             <ul class="buy-button list-none mb-0">
                 <li class="inline-block pl-1 mb-0">
                     <div class="md:mt-0 mt-4">
-                         <button id="login-show" type="button" class="btn rounded-md bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white ltr:md:ml-2 rtl:md:mr-2 w-full md:w-auto" data-toggle="modal" data-target="#myModal">
+                        <button id="login-show" type="button"
+                            class="btn rounded-md bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white ltr:md:ml-2 rtl:md:mr-2 w-full md:w-auto"
+                            data-toggle="modal" data-target="#myModal">
                             Login
-                          </button>
-                    </div>   
+                        </button>
+                    </div>
                 </li>
             </ul>
             <!--Login button End-->
@@ -282,130 +284,132 @@
     <!-- End Navbar -->
 
     <!-- Start Section-->
-    <section class="relative py-36 table w-full bg-gradient-to-b from-emerald-600/20 dark:from-emerald-600/40 via-emerald-600/10 dark:via-emerald-600/20 to-transparent">
-    <section class="relative lg:py-24 py-16">
-        <div class="container">
-            <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
-                <div class="lg:col-span-7 md:col-span-6">
-                    <img src="assets/images/svg/contact.svg" alt="">
-                </div>
+    <section
+        class="relative py-36 table w-full bg-gradient-to-b from-emerald-600/20 dark:from-emerald-600/40 via-emerald-600/10 dark:via-emerald-600/20 to-transparent">
+        <section class="relative lg:py-24 py-16">
+            <div class="container">
+                <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
+                    <div class="lg:col-span-7 md:col-span-6">
+                        <img src="assets/images/svg/contact.svg" alt="">
+                    </div>
 
-                <div class="lg:col-span-5 md:col-span-6">
-                    <div class="lg:ml-5">
-                        <div class="bg-white dark:bg-slate-900 rounded-3xl shadow dark:shadow-gray-700 p-6">
-                            <h3 class="mb-6 text-2xl leading-normal font-semibold">Get in touch !</h3>
+                    <div class="lg:col-span-5 md:col-span-6">
+                        <div class="lg:ml-5">
+                            <div class="bg-white dark:bg-slate-900 rounded-3xl shadow dark:shadow-gray-700 p-6">
+                                <h3 class="mb-6 text-2xl leading-normal font-semibold">Get in touch !</h3>
 
-                            <form method="post" name="myForm" id="myForm" onsubmit="return validateForm()">
-                                <p class="mb-0" id="error-msg"></p>
-                                <div id="simple-msg"></div>
-                                <div class="grid lg:grid-cols-12 lg:gap-6">
-                                    <div class="lg:col-span-6 mb-5">
-                                        <label for="name" class="font-semibold">Your Name:</label>
-                                        <input name="name" id="name" type="text" class="form-input mt-2 rounded-xl"
-                                            placeholder="Name :">
+                                <form method="post" name="myForm" id="myForm" onsubmit="return validateForm()">
+                                    <p class="mb-0" id="error-msg"></p>
+                                    <div id="simple-msg"></div>
+                                    <div class="grid lg:grid-cols-12 lg:gap-6">
+                                        <div class="lg:col-span-6 mb-5">
+                                            <label for="name" class="font-semibold">Your Name:</label>
+                                            <input name="name" id="name" type="text" class="form-input mt-2 rounded-xl"
+                                                placeholder="Name :">
+                                        </div>
+
+                                        <div class="lg:col-span-6 mb-5">
+                                            <label for="email" class="font-semibold">Your Email:</label>
+                                            <input name="email" id="email" type="email"
+                                                class="form-input mt-2 rounded-xl" placeholder="Email :">
+                                        </div>
                                     </div>
 
-                                    <div class="lg:col-span-6 mb-5">
-                                        <label for="email" class="font-semibold">Your Email:</label>
-                                        <input name="email" id="email" type="email" class="form-input mt-2 rounded-xl"
-                                            placeholder="Email :">
-                                    </div>
-                                </div>
+                                    <div class="grid grid-cols-1">
+                                        <div class="mb-5">
+                                            <label for="subject" class="font-semibold">Your Question:</label>
+                                            <input name="subject" id="subject" class="form-input mt-2 rounded-xl"
+                                                placeholder="Subject :">
+                                        </div>
 
-                                <div class="grid grid-cols-1">
-                                    <div class="mb-5">
-                                        <label for="subject" class="font-semibold">Your Question:</label>
-                                        <input name="subject" id="subject" class="form-input mt-2 rounded-xl"
-                                            placeholder="Subject :">
+                                        <div class="mb-5">
+                                            <label for="comments" class="font-semibold">Your Comment:</label>
+                                            <textarea name="comments" id="comments"
+                                                class="form-input mt-2 textarea rounded-xl"
+                                                placeholder="Message :"></textarea>
+                                        </div>
                                     </div>
-
-                                    <div class="mb-5">
-                                        <label for="comments" class="font-semibold">Your Comment:</label>
-                                        <textarea name="comments" id="comments" class="form-input mt-2 textarea rounded-xl"
-                                            placeholder="Message :"></textarea>
-                                    </div>
-                                </div>
-                                <button type="submit" id="submit" name="send"
-                                    class="btn bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl">Send
-                                    Message</button>
-                            </form>
+                                    <button type="submit" id="submit" name="send"
+                                        class="btn bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl">Send
+                                        Message</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--end container-->
+            <!--end container-->
 
-        <div class="container lg:mt-24 mt-16">
-            <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[30px]">
-                <div class="text-center px-6">
-                    <div class="relative text-transparent">
-                        <div
-                            class="w-14 h-14 bg-emerald-600/5 text-emerald-600 rounded-xl text-2xl flex align-middle justify-center items-center mx-auto shadow-sm dark:shadow-gray-800">
-                            <i class="uil uil-phone"></i>
+            <div class="container lg:mt-24 mt-16">
+                <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[30px]">
+                    <div class="text-center px-6">
+                        <div class="relative text-transparent">
+                            <div
+                                class="w-14 h-14 bg-emerald-600/5 text-emerald-600 rounded-xl text-2xl flex align-middle justify-center items-center mx-auto shadow-sm dark:shadow-gray-800">
+                                <i class="uil uil-phone"></i>
+                            </div>
+                        </div>
+
+                        <div class="content mt-7">
+                            <h5 class="title h5 text-lg font-semibold">Phone</h5>
+                            <p class="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and
+                                benefit</p>
+
+                            <div class="mt-5">
+                                <a href="tel:+152534-468-854"
+                                    class="btn btn-link text-emerald-600 hover:text-emerald-600 after:bg-emerald-600 transition duration-500">+152
+                                    534-468-854</a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="content mt-7">
-                        <h5 class="title h5 text-lg font-semibold">Phone</h5>
-                        <p class="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and
-                            benefit</p>
+                    <div class="text-center px-6">
+                        <div class="relative text-transparent">
+                            <div
+                                class="w-14 h-14 bg-emerald-600/5 text-emerald-600 rounded-xl text-2xl flex align-middle justify-center items-center mx-auto shadow-sm dark:shadow-gray-800">
+                                <i class="uil uil-envelope"></i>
+                            </div>
+                        </div>
 
-                        <div class="mt-5">
-                            <a href="tel:+152534-468-854"
-                                class="btn btn-link text-emerald-600 hover:text-emerald-600 after:bg-emerald-600 transition duration-500">+152
-                                534-468-854</a>
+                        <div class="content mt-7">
+                            <h5 class="title h5 text-lg font-semibold">Email</h5>
+                            <p class="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and
+                                benefit</p>
+
+                            <div class="mt-5">
+                                <a href="mailto:contact@example.com"
+                                    class="btn btn-link text-emerald-600 hover:text-emerald-600 after:bg-emerald-600 transition duration-500">contact@example.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center px-6">
+                        <div class="relative text-transparent">
+                            <div
+                                class="w-14 h-14 bg-emerald-600/5 text-emerald-600 rounded-xl text-2xl flex align-middle justify-center items-center mx-auto shadow-sm dark:shadow-gray-800">
+                                <i class="uil uil-map-marker"></i>
+                            </div>
+                        </div>
+
+                        <div class="content mt-7">
+                            <h5 class="title h5 text-lg font-semibold">Location</h5>
+                            <p class="text-slate-400 mt-3">RGUKT Rk valley Campus, Rajiv Knowledge Valley(Idupulapaya),
+                                <br> Kadapa(District), AP - 516330</p>
+
+                            <div class="mt-5">
+                                <a href="#" data-type="iframe"
+                                    class="video-play-icon read-more lightbox btn btn-link text-emerald-600 hover:text-emerald-600 after:bg-emerald-600 transition duration-500">View
+                                    on Google map</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="text-center px-6">
-                    <div class="relative text-transparent">
-                        <div
-                            class="w-14 h-14 bg-emerald-600/5 text-emerald-600 rounded-xl text-2xl flex align-middle justify-center items-center mx-auto shadow-sm dark:shadow-gray-800">
-                            <i class="uil uil-envelope"></i>
-                        </div>
-                    </div>
-
-                    <div class="content mt-7">
-                        <h5 class="title h5 text-lg font-semibold">Email</h5>
-                        <p class="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and
-                            benefit</p>
-
-                        <div class="mt-5">
-                            <a href="mailto:contact@example.com"
-                                class="btn btn-link text-emerald-600 hover:text-emerald-600 after:bg-emerald-600 transition duration-500">contact@example.com</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="text-center px-6">
-                    <div class="relative text-transparent">
-                        <div
-                            class="w-14 h-14 bg-emerald-600/5 text-emerald-600 rounded-xl text-2xl flex align-middle justify-center items-center mx-auto shadow-sm dark:shadow-gray-800">
-                            <i class="uil uil-map-marker"></i>
-                        </div>
-                    </div>
-
-                    <div class="content mt-7">
-                        <h5 class="title h5 text-lg font-semibold">Location</h5>
-                        <p class="text-slate-400 mt-3">RGUKT Rk valley Campus, Rajiv Knowledge Valley(Idupulapaya), <br> Kadapa(District), AP - 516330</p>
-
-                        <div class="mt-5">
-                            <a href="#"
-                                data-type="iframe"
-                                class="video-play-icon read-more lightbox btn btn-link text-emerald-600 hover:text-emerald-600 after:bg-emerald-600 transition duration-500">View
-                                on Google map</a>
-                        </div>
-                    </div>
-                </div>
+                <!--end grid-->
             </div>
-            <!--end grid-->
-        </div>
-        <!--end container-->
+            <!--end container-->
+        </section>
+        <!--end section-->
     </section>
-    <!--end section-->
-</section>
     <!-- End Section-->
 
     <!-- Start Footer -->
@@ -456,9 +460,8 @@
                     <div class="ltr:md:text-left rtl:md:text-right text-center">
                         <p class="mb-0 text-gray-300 font-medium">© <script>
                                 document.write(new Date().getFullYear())
-                            </script> RGUKT Rk valley. &nbsp; <a
-                                href=".." target="_blank"
-                                class="text-reset">Version: 1.0.0</a></p>
+                            </script> RGUKT Rk valley. &nbsp; <a href=".." target="_blank" class="text-reset">Version:
+                                1.0.0</a></p>
                     </div>
 
                     <!-- <ul class="list-none ltr:md:text-right rtl:md:text-left text-center">
