@@ -1,6 +1,14 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+
+/*
+        Author: S.vijay kumar
+        Email: codervijay1@gmail.com
+        Website: Examcell
+        Version: 1.0.0
+        Created: March 2023
+     */
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
@@ -151,7 +159,7 @@ button {
         }
 
         .tabContainer .buttonContainer button:hover {
-            /* background-color: #b3b3b3; */
+            background-color: #a9f9be;
         }
 
         .tabContainer .tabPanel {
@@ -522,62 +530,19 @@ button {
     padding-bottom: 1rem;
     font-size: var(--small-font-size);
   }
-/* 
-  .contact__card{
-    grid-template-columns: repeat(2, 200px);
-  }
-  .contact__card-box{
-    padding: 28px 1.5rem 1.5rem;
-  }
-  
-  .subscribe__container{
-    padding: 4rem 10rem 4.5rem;
-    border-radius: 2rem;
-    border: 12px solid var(--first-color-light);
-  }
-  .subscribe__title{
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-  }
-  .subscribe__description{
-    font-size: var(--normal-font-size);
-    padding: 0 8rem;
-  }
 
-  .subscribe__button{
-    font-size: var(--normal-font-size);
-  }
-
-  .footer__content{
-    grid-template-columns: repeat(4, max-content);
-  }
-  .footer__title{
-    margin-bottom: 1.5rem;
-  }
-  .footer__links{
-    row-gap: 1rem;
-  }
-  .footer__info{
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 2rem;
-  }
-  .show-scroll{
-    bottom: 3rem;
-    right: 3rem;
-  } */
 }
 @media screen and (min-width: 1040px){
-  /* .container{
+  .container{
     margin-left: auto;
     margin-right: auto;
   }
   .home__container{
     column-gap: 4rem;
-  } */
+  }
 }
 /* For 2K & 4K resolutions */
-/* @media screen and (min-width: 2048px) {
+@media screen and (min-width: 2048px) {
   body {
     zoom: 1.5;
   }
@@ -587,7 +552,7 @@ button {
   body {
     zoom: 2;
   }
-} */
+}
         /* ================= Scroll Bar =================== */
 
 ::-webkit-scrollbar{

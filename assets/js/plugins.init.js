@@ -1,12 +1,10 @@
-/* Template Name: Jobstack - Job Portal Tailwind CSS Template
-   Author: Shreethemes
-   Email: support@shreethemes.in
-   Website: https://shreethemes.in
+/* 
+   Author: S.Vijay kumar
+   Email: codervijay1@gmail.com
    Version: 1.0.0
    Created: March 2023
-   File Description: Common JS file of the template(plugins.init.js)
+   File Description: Main JS file of the Exam Cell
 */
-
 
 /*********************************/
 /*         INDEX                 */

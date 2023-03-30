@@ -347,7 +347,7 @@ $(function () {
 });
 
 /*********************/
-/* Notice Board  */
+/* Notice Board  Container */
 /*********************/
 
         var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
@@ -368,8 +368,8 @@ $(function () {
         }
         showPanel(0);
 
-        /*********************/
-/* Notice Board  */
+ /*********************/
+    /* Notice Board DropDown */
 /*********************/
 
 const accordionItems = document.querySelectorAll('.value__accordion-item')
