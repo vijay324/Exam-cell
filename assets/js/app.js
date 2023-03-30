@@ -1,10 +1,9 @@
-/* Template Name: Jobstack - Job Portal Tailwind CSS Template
-   Author: Shreethemes
-   Email: support@shreethemes.in
-   Website: https://shreethemes.in
+/* 
+   Author: S.Vijay kumar
+   Email: codervijay1@gmail.com
    Version: 1.0.0
    Created: March 2023
-   File Description: Main JS file of the template
+   File Description: Main JS file of the Exam Cell
 */
 
 
@@ -23,6 +22,8 @@
  *     10.  Contact JS           *
  *     11.  Light & Dark Theme   *
  *     12.  LTR & RTL Mode       *
+ *     13.  Login PopUp          *
+ *     14.  Notice Board         *
  ================================*/
 
 window.addEventListener('load', fn, false)
@@ -330,3 +331,70 @@ try{
     switcherRtl?.addEventListener("click" ,changeLayout )
 }
 catch(err){}
+
+/*********************/
+/* Login PopUp  */
+/*********************/
+
+$(function () {
+    $('#login-show').click(function () {
+        $('#login-modal').fadeIn().css("display", "flex");
+    });
+
+    $('.close-modal').click(function () {
+        $('#login-modal').fadeOut();
+    });
+});
+
+/*********************/
+/* Notice Board  */
+/*********************/
+
+        var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
+        var tabPanels = document.querySelectorAll(".tabContainer  .tabPanel");
+
+        function showPanel(panelIndex, colorCode) {
+            tabButtons.forEach(function (node) {
+                node.style.backgroundColor = "";
+                node.style.color = "";
+            });
+            tabButtons[panelIndex].style.backgroundColor = colorCode;
+            tabButtons[panelIndex].style.color = "green";
+            tabPanels.forEach(function (node) {
+                node.style.display = "none";
+            });
+            tabPanels[panelIndex].style.display = "block";
+            tabPanels[panelIndex].style.backgroundColor = colorCode;
+        }
+        showPanel(0);
+
+        /*********************/
+/* Notice Board  */
+/*********************/
+
+const accordionItems = document.querySelectorAll('.value__accordion-item')
+
+        accordionItems.forEach((item) => {
+            const accordionHeader = item.querySelector('.value__accordion-header')
+
+            accordionHeader.addEventListener('click', () => {
+                const openItem = document.querySelector('.accordion-open')
+
+                toggleItem(item)
+                if (openItem && openItem !== item) {
+                    toggleItem(openItem)
+                }
+            })
+        })
+
+        const toggleItem = (item) => {
+            const accordionContent = item.querySelector('.value__accordion-content')
+
+            if (item.classList.contains('accordion-open')) {
+                accordionContent.removeAttribute('style')
+                item.classList.remove('accordion-open')
+            } else {
+                accordionContent.style.height = accordionContent.scrollHeight + 'px'
+                item.classList.add('accordion-open')
+            }
+        }
