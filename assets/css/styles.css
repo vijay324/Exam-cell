@@ -97,12 +97,6 @@ img {
   height: auto;
 }
 
-input,
-button {
-  font-family: var(--body-font);
-  outline: none;
-  border: none;
-}
 
 /*=============== THEME ===============*/
 .change-theme{
