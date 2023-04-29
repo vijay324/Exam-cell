@@ -34,7 +34,15 @@
     <!-- Import JQuery For Tabs Work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    
+    <style>
+        @font-face {
+             font-family: "SF Pro Text";
+             src: url("SF-Pro-Text-Regular.otf.ttf");
+        }
+        *{
+             font-family: SF Pro Text;
+        }
+    </style>
 
 
 </head>
@@ -290,11 +298,13 @@
     <!-- End Navbar -->
 
     <!-- login Form -->
-    <div id="login-modal">
+    <div id="login-modal" class="lf">
+        <div class="login__box">
         <div
             class="bg-white dark:bg-slate-900 rounded-3xl shadow dark:shadow-gray-800 md:p-8 p-6 ltr:lg:mr-10 rtl:lg:ml-10 relative">
-            <h4 class="mb-3 text-2xl font-semibold">Welcome back</h4>
+            
             <div class="top-form">
+                <h4 class="mb-3 ml-4 text-2xl font-semibold">Welcome back</h4>
                 <div class="close-modal">
                     &#10006
                 </div>
@@ -334,6 +344,7 @@
             </form>
             <!-- end form -->
         </div>
+    </div>
     </div>
     <!-- login Form End -->
 
@@ -393,8 +404,8 @@
                     </div>
                     <div class="tabContainer">
                         <div class="buttonContainer">
-                            <button onclick="showPanel(0,'#fff')">Students</button>
-                            <button onclick="showPanel(1,'#fff')">Faculty</button>
+                            <button onclick="showPanel(0,'#fff')" class="tab__button">Students</button>
+                            <button onclick="showPanel(1,'#fff')" class="tab__button">Faculty</button>
                             <!-- <button onclick="showPanel(2,'#fff')">Tab 3</button>
                             <button onclick="showPanel(3,'#fff')">Tab 4</button> -->
                         </div>
